@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "american_flag.jpg",
+      "filename" : "flagg.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "graybackground.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
