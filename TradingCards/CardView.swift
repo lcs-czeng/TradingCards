@@ -15,7 +15,7 @@ struct CardView: View {
                 .resizable()
                 .scaledToFill()
                 .frame(width: 400,height: 400)
-           
+            
             //Layer #2
             VStack(spacing: -25) {
                 HStack {
@@ -40,6 +40,17 @@ struct CardView: View {
                         .kerning(8)
                 }
                 Spacer()
+            }
+            
+            //Layer #3
+            VStack {
+                HStack {
+                    Image("frank")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 350, height: 350)
+                        .padding(.top, 170)
+                }
             }
         }
     }
