@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160117712CE988F50075D364 /* Bourgeois-BoldCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = 160117702CE988F50075D364 /* Bourgeois-BoldCond.otf */; };
+		160117772CE98DF30075D364 /* Bourgeois-BookCondItal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 160117762CE98DF30075D364 /* Bourgeois-BookCondItal.otf */; };
 		161004522CE2733700BEC815 /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161004512CE2733700BEC815 /* TradingCardsApp.swift */; };
-		161004542CE2733700BEC815 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161004532CE2733700BEC815 /* ContentView.swift */; };
 		161004562CE2733C00BEC815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161004552CE2733C00BEC815 /* Assets.xcassets */; };
 		161004592CE2733C00BEC815 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 161004582CE2733C00BEC815 /* Preview Assets.xcassets */; };
+		16F92BC32CE97FA700803F77 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F92BC22CE97FA700803F77 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160117702CE988F50075D364 /* Bourgeois-BoldCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bourgeois-BoldCond.otf"; sourceTree = "<group>"; };
+		160117732CE98AD00075D364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		160117762CE98DF30075D364 /* Bourgeois-BookCondItal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bourgeois-BookCondItal.otf"; sourceTree = "<group>"; };
 		1610044E2CE2733700BEC815 /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		161004512CE2733700BEC815 /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
-		161004532CE2733700BEC815 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		161004552CE2733C00BEC815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		161004582CE2733C00BEC815 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16F92BC22CE97FA700803F77 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160117722CE989070075D364 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				160117702CE988F50075D364 /* Bourgeois-BoldCond.otf */,
+				160117762CE98DF30075D364 /* Bourgeois-BookCondItal.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		161004452CE2733700BEC815 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +65,11 @@
 		161004502CE2733700BEC815 /* TradingCards */ = {
 			isa = PBXGroup;
 			children = (
+				160117732CE98AD00075D364 /* Info.plist */,
 				161004512CE2733700BEC815 /* TradingCardsApp.swift */,
-				161004532CE2733700BEC815 /* ContentView.swift */,
+				16F92BC22CE97FA700803F77 /* CardView.swift */,
 				161004552CE2733C00BEC815 /* Assets.xcassets */,
+				160117722CE989070075D364 /* Fonts */,
 				161004572CE2733C00BEC815 /* Preview Content */,
 			);
 			path = TradingCards;
@@ -125,7 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160117712CE988F50075D364 /* Bourgeois-BoldCond.otf in Resources */,
 				161004592CE2733C00BEC815 /* Preview Assets.xcassets in Resources */,
+				160117772CE98DF30075D364 /* Bourgeois-BookCondItal.otf in Resources */,
 				161004562CE2733C00BEC815 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				161004542CE2733700BEC815 /* ContentView.swift in Sources */,
+				16F92BC32CE97FA700803F77 /* CardView.swift in Sources */,
 				161004522CE2733700BEC815 /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +293,7 @@
 				DEVELOPMENT_TEAM = 4UG443984D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +323,7 @@
 				DEVELOPMENT_TEAM = 4UG443984D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
