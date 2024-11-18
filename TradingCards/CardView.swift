@@ -44,13 +44,19 @@ struct CardView: View {
             
             //Layer #3
             VStack {
-                HStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(Color.gray.opacity(0.8))
+                        .frame(width: 300, height: 300)
+                        .shadow(radius: 10)
+                    
                     Image("frank")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 350, height: 350)
-                        .padding(.top, 170)
+                        .frame(width: 350, height: 400)
                 }
+                .padding(.top, 150)
+                
             }
         }
     }
