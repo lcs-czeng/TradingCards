@@ -46,7 +46,7 @@ struct CardView: View {
             VStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 25)
-                        .fill(Color.gray.opacity(0.8))
+                        .fill(Color.black)
                         .frame(width: 300, height: 300)
                         .shadow(radius: 10)
                     
@@ -57,6 +57,17 @@ struct CardView: View {
                 }
                 .padding(.top, 150)
                 
+                ZStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.black.opacity(0.5))
+                        .frame(width: 300, height: 60)
+                        .shadow(radius: 10)
+                    Text("\"Democracy is so overrated.\"")
+                        .font(.custom("Bourgeois-BoldCond", size: 25))
+                        .foregroundColor(.white.opacity(0.8))
+                        .multilineTextAlignment(.center)
+                }
+                .offset(y: -35)
             }
         }
     }
