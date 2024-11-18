@@ -22,7 +22,6 @@ struct CardView: View {
                     Text("HOUSE")
                         .font(.custom("Bourgeois-BoldCond", size: 80))
                         .foregroundColor(.white.opacity(0.8))
-                        .minimumScaleFactor(0.5)
                         .kerning(8)
                     Image("americanflag")
                         .resizable()
