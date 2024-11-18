@@ -17,7 +17,7 @@ struct CardView: View {
                 .frame(width: 400,height: 400)
             
             //Layer #2
-            VStack(spacing: -25) {
+            VStack(spacing: -15) {
                 HStack {
                     Text("HOUSE")
                         .font(.custom("Bourgeois-BoldCond", size: 80))
@@ -29,7 +29,7 @@ struct CardView: View {
                         .scaledToFit()
                         .frame(width:80, height: 80)
                 }
-                .padding(.top, 100)
+                .padding(.top, 90)
                 HStack(alignment: .firstTextBaseline) {
                     Text("of")
                         .font(.custom("Bourgeois-BookCondItal", size: 80))
@@ -54,9 +54,22 @@ struct CardView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 350, height: 400)
+                    
+                    Text("Frank")
+                        .font(.custom("Bourgeois-BoldCond", size: 25))
+                        .foregroundColor(.red.opacity(0.8))
+                        .bold()
+                        .padding(.bottom, 230)
+                        .padding(.trailing, 200)
+                    Text("Underwood")
+                        .font(.custom("Bourgeois-BoldCond", size: 25))
+                        .foregroundColor(.blue.opacity(0.8))
+                        .bold()
+                        .padding(.bottom, 230)
+                        .padding(.leading, 180)
                 }
                 .padding(.top, 150)
-                
+                            
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
                         .fill(Color.black.opacity(0.5))
