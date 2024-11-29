@@ -13,7 +13,7 @@ struct CardsListView: View {
             List(cards) { currentCards in
                 CardsView(providedCards: currentCards)
             }
-            .navigationTitle("House Of Cards trading card")
+            .navigationTitle("House Of Cards")
         }
     }
 }
