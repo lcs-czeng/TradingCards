@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct InfoTitleView: View {
+    let title: String
+    let content: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            
+            Text(title)
+                .font(.system(size:20))
+                .fontWeight(.semibold)
+            Text(content)
+        }
     }
 }
 
 #Preview {
-    InfoTitleView()
+    InfoTitleView(title: "Title", content: "Content")
 }

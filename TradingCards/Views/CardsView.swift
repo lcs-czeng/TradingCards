@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardView: View {
+struct CardsView: View {
     var body: some View {
         ZStack {
             //Layer #1
@@ -86,5 +86,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView()
+    CardsView()
 }
