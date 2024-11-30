@@ -16,7 +16,7 @@ struct CardsView: View {
             Image(providedCards.image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 80, height: 80, alignment: .center)
+                .frame(width: 80, height: 130, alignment: .center)
                 .clipped()
             VStack(alignment: .leading) {
                 Text(providedCards.firstName)
