@@ -16,7 +16,6 @@ struct InfoTitleView: View {
             
             Text(title)
                 .font(.system(size:20))
-                .fontWeight(.semibold)
         }
     }
 }
