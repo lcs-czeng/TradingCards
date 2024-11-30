@@ -52,10 +52,12 @@ struct CardsDetailView: View {
                         .frame(width: 300, height: 300)
                         .shadow(radius: 10)
                     
-                    Image("frank")
+                    Image(cardToShow.image)
                         .resizable()
                         .scaledToFit()
+                        .clipped()
                         .frame(width: 350, height: 400)
+                        .border(Color.red)
                     
                     Text(cardToShow.firstName)
                         .font(.custom("Bourgeois-BoldCond", size: 25))
@@ -90,7 +92,7 @@ struct CardsDetailView: View {
 
 #Preview {
     NavigationStack {
-        CardsDetailView(cardToShow: frank)
+        CardsDetailView(cardToShow: claire)
     }
 }
 
