@@ -1,5 +1,5 @@
 //
-//  HouseOfCardView.swift
+//  CardsDetailView.swift
 //  TradingCards
 //
 //  Created by 曾梓恒 on 2024/11/29.
@@ -57,7 +57,6 @@ struct CardsDetailView: View {
                         .scaledToFit()
                         .clipped()
                         .frame(width: 350, height: 400)
-                        .border(Color.red)
                     
                     Text(cardToShow.firstName)
                         .font(.custom("Bourgeois-BoldCond", size: 25))

@@ -11,12 +11,17 @@ struct CardsListView: View {
     var body: some View {
         NavigationStack {
             List(cards) { currentCards in
-                CardsView(providedCards: currentCards)
+                NavigationLink {
+                    CardsDetailView(cardToShow: currentCards)
+                } label: {
+                    CardsView(providedCards: currentCards)
+                }
             }
             .navigationTitle("House Of Cards")
         }
     }
 }
+
 
 #Preview {
     CardsListView()

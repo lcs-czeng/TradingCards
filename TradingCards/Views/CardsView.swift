@@ -1,5 +1,5 @@
 //
-//  CardView.swift
+//  CardsView.swift
 //  TradingCards
 //
 //  Created by 曾梓恒 on 2024/11/16.
@@ -28,6 +28,6 @@ struct CardsView: View {
 }
 
 #Preview {
-    CardsView(providedCards: frank)
+    CardsView(providedCards: doug)
         .padding()
 }

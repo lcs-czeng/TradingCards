@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
 struct Cards: Identifiable {
     let id = UUID()
     let firstName: String
