@@ -17,7 +17,7 @@ struct CardsDetailView: View {
             Image("graybackground")
                 .resizable()
                 .scaledToFill()
-                .frame(width: 400,height: 400)
+                .ignoresSafeArea()
             
             //Layer #2
             VStack(spacing: -15) {
