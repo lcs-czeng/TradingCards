@@ -19,6 +19,13 @@ struct CardsDetailView: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
+            VStack {
+                Bar()
+                    .fill(Color.white)
+                    .frame(height: 160)
+                Spacer()
+            }
+            
             //Layer #2
             VStack(spacing: -15) {
                 HStack {
@@ -72,7 +79,7 @@ struct CardsDetailView: View {
                         .padding(.leading, 180)
                 }
                 .padding(.top, 150)
-                            
+                
                 ZStack {
                     RoundedRectangle(cornerRadius: 15)
                         .fill(Color.black.opacity(0.5))
@@ -84,6 +91,13 @@ struct CardsDetailView: View {
                         .multilineTextAlignment(.center)
                 }
                 .offset(y: -35)
+            }
+            VStack {
+                Spacer()
+                Bar()
+                    .fill(Color.white)
+                    .frame(height: 160)
+                    .rotationEffect(.degrees(180))
             }
         }
     }
